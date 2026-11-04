@@ -1,0 +1,1 @@
+{"methodConfig":[{"name":[{"service":"foo","method":"bar"}],"timeout":"1.5s","waitForReady":true,"maxRequestMessageBytes":1024}],"loadBalancingConfig":[{"round_robin":{}}]}

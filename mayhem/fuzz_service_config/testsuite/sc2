@@ -1,0 +1,1 @@
+{"loadBalancingConfig":[{"pick_first":{"shuffleAddressList":true}}],"healthCheckConfig":{"serviceName":"x"}}

@@ -1,0 +1,1 @@
+{"loadBalancingConfig":[{"weighted_round_robin":{"blackoutPeriod":"10s"}}]}
