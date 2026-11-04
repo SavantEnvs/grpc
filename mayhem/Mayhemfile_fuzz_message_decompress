@@ -1,0 +1,9 @@
+project: savantenvs/grpc
+target: fuzz_message_decompress
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_message_decompress/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_message_decompress
+    libfuzzer: true
+    timeout: 10

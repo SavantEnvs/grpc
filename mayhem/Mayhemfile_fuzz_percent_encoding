@@ -1,0 +1,9 @@
+project: savantenvs/grpc
+target: fuzz_percent_encoding
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_percent_encoding/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_percent_encoding
+    libfuzzer: true
+    timeout: 10

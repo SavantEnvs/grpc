@@ -1,0 +1,9 @@
+project: savantenvs/grpc
+target: fuzz_chaotic_good_frame_header
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_chaotic_good_frame_header/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_chaotic_good_frame_header
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,13 @@
+# Effective ignore file for `docker build -f mayhem/Dockerfile` (BuildKit prefers it over upstream's root
+# .dockerignore, which drops .git). Bake in the FULL repo including .git history; drop only local build output.
+build/
+mayhem/build/
+out/
+*.o
+*.a
+*.so
+*.dylib
+**/__pycache__/
+.DS_Store
+*.swp
+*~
